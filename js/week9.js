@@ -1,4 +1,5 @@
 (function(){
+
 //Expanded AJAX example
 
   $('.thumbInfo img').on('click', function() {
@@ -41,5 +42,6 @@
     }
 
   });
+
 
 })();
