@@ -5,7 +5,7 @@
 
     // do an AJAX call
     $.ajax({ //make request
-      url: "includes/ajaxuery.php",
+      url: "includes/ajaxQuery.php",
       data: {model: this.id}, //find what corresponds to this id
       type: "GET" // don't put a semi-colon at the end so we can chain methods together
     })
@@ -14,14 +14,12 @@
     .done(function(data){//when ajax request is done
       console.log(data);
 
-      if(data){
+      if(data && data !== "null"){
         data = JSON.parse(data);
         renderCarInfo(data);
       }else{
         alert('your ajax call didn\'t work');
-      }
-
-      
+      }      
     }) //don't put semi colon here either
 
     .fail(function(ajaxCall, status, error){ //if the call fails
