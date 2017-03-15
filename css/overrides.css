@@ -85,7 +85,7 @@ nav > div > i {
 	position: relative;
 }
 
-#cars { width:80%; position: relative; margin: 0 auto; top:330px; opacity:0; }
+#cars { width:80%; position: relative; margin: 0 auto; top:330px; opacity:100; }
 
 .thumbInfo img { cursor: pointer; transition: all .6s; } /*, .mainContainer img*/
 .thumbInfo img { width: 175px; }
